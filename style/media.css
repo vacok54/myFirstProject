@@ -1,0 +1,107 @@
+@media (max-width: 1350px) {
+    .blog-items {
+        justify-content: space-around;
+        column-gap: 30px;
+    }
+    .work-items {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+        .work-item:nth-child(even) {
+            margin: 0;
+        }
+        svg {
+            display: none;
+        }
+    }
+    .reviews-items {
+        padding: 0 50px;
+    }
+}
+@media (max-width: 1024px) {
+    .reviews-items {
+        display: grid;
+        row-gap: 50px;
+    }
+    .create-design_description {
+        max-width: 500px;
+    }
+    .about {
+        column-gap: 0;
+    }
+    .blog-item {
+        width: 450px;
+    }
+    .blog-item_img {
+        height: 330px;
+    }
+    .contact {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+@media (max-width: 768px) {
+    .blog-item_img::after {
+        border-bottom-right-radius: 85px;
+    }
+    .create-design {
+        .animation-pictures::after {
+            border-bottom-right-radius: 100px;
+        }
+    }
+    .head-nav_ul {
+        display: none;
+    }
+    .create-design {
+        display: grid;
+        row-gap: 50px;
+        justify-content: center;
+    }
+    .create-design_description {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .design-img {
+        width: 85%;
+        height: 85%;
+        margin: 0 auto;
+    }
+    .services-items {
+        grid-template-columns: repeat(1, 0.8fr);
+        row-gap: 70px;
+        justify-content: center;
+    }
+    .interioris {
+        display: grid;
+        .animation-pictures::after {
+            border-top-left-radius: 100px;
+        }
+    }
+    .interioris-img {
+        width: 55%;
+        margin: 0 auto;
+    }
+    .interioris-text {
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .about {
+        justify-content: center;
+        display: grid;
+        .about-text {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+            display: block;
+        }
+        .about-img {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .animation-pictures::after {
+            border-bottom-right-radius: 120px;
+
+        }
+    }
+}
